@@ -1,4 +1,4 @@
-package Conteudo
+package conteudo
 
 import java.time.LocalDate
 
@@ -11,17 +11,30 @@ fun main(){
     """.trimIndent() //isso retira os espaços extras nas extremidades
     println(welcome)
 
-    val csv ="""
-    texto1,
-    texto2,
+    val csv1 ="""
+    texto1
+    texto2
     texto3
-    """.replaceIndent(";")
-    println(csv)
+    """.replaceIndent(",") //acrescentou o delimitador ';'
+    println(csv1)
+
+    print("\n")
+
+    val csv2 ="""
+    texto1
+    texto2
+    texto3
+    """.trimIndent()
+    println(csv2)
+
+    print("\n")
+    val csvComDelimitador = csv2.replace("\n", ", ") // Substitui quebras de linha por "; "
+    println(csvComDelimitador)
 
     var name = "Elinatan"
     var age = 34
     var height = 1.72
-    println("Olá $name. Você tem $age anos e sua altura é $height")
+    println("Olá $name Você tem $age anos e sua altura é $height")
 
 
     /*Teste - Crie um programa que possa imprimir a quantidade de caracteres do seu nome e também qual será a sua idade no ano 2050.
@@ -39,7 +52,4 @@ Exemplo de mensagem: Olá Tiago. Em 2050 você terá 60 anos. Seu nome possui 5 
     val produto1 = "notebook"
     val produto2 = "notebook"
     println(produto1 == produto2)
-
-
-
 }

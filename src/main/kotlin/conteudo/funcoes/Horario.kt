@@ -1,4 +1,4 @@
-package Conteudo.Funcoes
+package conteudo.funcoes
 
 import java.time.LocalTime
 import java.time.format.DateTimeFormatter

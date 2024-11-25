@@ -1,4 +1,4 @@
-package Conteudo
+package conteudo
 
 fun main() {
 

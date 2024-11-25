@@ -1,4 +1,4 @@
-package Conteudo
+package conteudo
 
 import java.text.NumberFormat
 import java.util.*
@@ -31,14 +31,14 @@ fun main() {
     val motorista = true
 
     //item2 e item3
-    if( !( age >= 18 ) ){
+    if (!(age >= 18)) {
         println("Maior de 18 anos, pode dirigir")
     } else {
         println("Menor de 18 anos, não é permitido dirigir")
     }
 
     //item4
-    if( motorista && age >= 18 ) {
+    if (motorista && age >= 18) {
         println("Sou motorista e tenho 18 anos ou mais")
     } else if (motorista && age < 18) {
         println("Sou motorista mesmo sendo menor de idade")
@@ -49,7 +49,7 @@ fun main() {
     }
 
     //item5
-    if(motorista && age > 30) {
+    if (motorista && age > 30) {
         println("Sou motorista e tenho mais que 30 anos")
     } else {
         println("Sou motorista, mas não tenho mais de 30 anos")
@@ -60,15 +60,14 @@ fun main() {
     val preco = 22_000
     val taxaDesconto = 12
     val desconto = taxaDesconto / 100.0 //precisei escrever 100.0 pois divisão de inteiros, retornará um inteiro
-    val total  = preco - (preco * desconto)
 
-    // Formatando o valor como moeda em real
-    val formatoMoeda = NumberFormat.getCurrencyInstance(Locale("pt", "BR"))
-    val totalFormatado = formatoMoeda.format(total)
-
-    if(produto == "Imac" && preco >= 10_000 ) {
+    if (produto == "Imac" && preco >= 10_000) {
+        val total = preco - (preco * desconto)
+        // Formatando o valor como moeda em real
+        val formatoMoeda = NumberFormat.getCurrencyInstance(Locale("pt", "BR"))
+        val totalFormatado = formatoMoeda.format(total)
         println("desconto aplicado de 12% para este produto. Total a pagar: $totalFormatado")
     } else {
-        println("venda concluída")
+        println("O total a pagar: $preco")
     }
 }

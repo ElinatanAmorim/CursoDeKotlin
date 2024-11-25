@@ -1,0 +1,24 @@
+
+Crtl R = substituir
+
+Shifit + F6 = mudar é um nome de variável, função ou classe
+
+Identar o código =
+    Ctrl + Alt + L
+    Você também pode apertar SHIFT 2 vezes, irá abrir a caixa de pesquisa e digite "Reformat Code."
+
+
+
+Formatação:
+
+    // Formatando o valor como moeda em real
+    val formatoMoeda = NumberFormat.getCurrencyInstance(Locale("pt", "BR"))
+    val totalFormatado = formatoMoeda.format(total)
+
+
+
+
+Observações:
+isAdmin ou hasCerticate é administrador ou tem certificado, quando trabalho com Boolean é mais fácil por assim
+
+Posso ter funções de mesmo nome, mas com parâmetros diferentes

@@ -1,4 +1,4 @@
-package Conteudo
+package conteudo
 
 fun main() {
 
@@ -18,7 +18,7 @@ fun main() {
 
     var name = "Elinatan"
     var sobrenome = "Amorim"
-    var nomeCompleto = "Elinatan Amorim de \n Oliveira"
+    var nomeCompleto = "Elinatan Amorim de \nOliveira"
     var firstname: Char = 'E' // aspas simples
     var primeiroCaractere = name[0]
     var primeiroCaractereFirst = name.first()
@@ -43,7 +43,7 @@ fun main() {
     println("Meu nome é $name")
     println(age)
     println(weight)
-    println(height) // o class mostra o tipo do dado
+    println(height)
     println("É programador? $programdaor")
 
     //Conversão Tipo Primitivo
@@ -51,7 +51,7 @@ fun main() {
     var conversion = priceProduct.toInt() // o inverso seria .toDouble()
     println(conversion)
 
-    println("$name \n $sobrenome")
+    println("$name \n$sobrenome")
     println(nomeCompleto)
 
     var price1 = 20

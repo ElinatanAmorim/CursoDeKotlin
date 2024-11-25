@@ -1,6 +1,9 @@
-package Conteudo
+package conteudo
 
 fun main() {
+
+//  Use if para condições booleanas simples e comparações únicas.
+//  Use when para múltiplos casos ou para valores conhecidos, onde é possível comparar uma variável com diversos padrões de maneira mais limpa.
 
     var produto = "Tv1"
     if (produto.length < 3) {  //Se fosse utilizar a negação if ( !(produto.length <3) ) {

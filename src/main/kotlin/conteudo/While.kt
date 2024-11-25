@@ -1,6 +1,9 @@
-package Conteudo
+package conteudo
 
 fun main() {
+
+//    while: Verifica a condição antes de executar o bloco.
+//    do-while: Executa o bloco pelo menos uma vez, depois verifica a condição.
 
     var i = 0
     while (i < 3) {
